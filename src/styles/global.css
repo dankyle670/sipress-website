@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* CSS */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+  "liga" 1,
+  "calt" 1, /* Contextual Alternates */
+  "dlig" 1, /* Discretionary Ligatures */
+  "ss07" 1, /* fSquare punctuation */
+  "ss08" 1, /* Square quotes */
+  "zero" 1, /* Slashed zero */
+  "tnum" 1, /* Tabular numbers */
+    "cv03", /* Open six */
+    "cv04" 1, /* Open nine */
+    "cv01" 1, /* Alternate one */
+    "cv09", /* Flat-top three */
+    "cv02" 1; /* Open 4 */
+}
+@supports (font-variation-settings: normal) {
+  /* Use variable font if supported */
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(#4d9e3c, #fff7f9);
+  font-family: 'outfit';
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: black;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 120px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid black;
+}
+
+.contact-inputs::placeholder {
+  color: black;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: black;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #34790f, #76fa6d);
+  cursor: pointer;
+}
+
+.contact-left button img {
+  height: 15px;
+}
+
+.contact-right img {
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+
+  .contact-right {
+    display: none;
+  }
+}
+
+
+.slider {
+  width: 800px;
+  height: 530px;
+  background: url(bleu-base.jpeg);
+  margin: 100px auto;
+  animation: slide 20s infinite;
+
+}
+.slider1 {
+  width: 400px;
+  height: 200px;
+  background: url(tech1.jpg);
+  margin: 100px auto;
+  animation: slide1 20s infinite;
+}
+
+@keyframes slide1 {
+  25%{
+  background: url(tech1.jpg);
+  }
+  50%{
+    background: url(tech2.jpg);
+  }
+  75%{
+    background: url(tech3.jpg);
+  }
+  100%{
+    background: url(tech4.jpg);
+  }
+}
+
+@keyframes slide {
+  25%{
+  background: url(bleu-base.jpeg);
+  }
+  50%{
+    background: url(pipeline2.jpg);
+  }
+  75%{
+    background: url(hevea2.jpg);
+  }
+  100%{
+    background: url(hevea1.jpg);
+  }
+}
