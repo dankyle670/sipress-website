@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(#4d9e3c, #fff7f9);
+  background: linear-gradient(#3bd13d, #74e97ea0);
   font-family: 'outfit';
 }
 
@@ -100,7 +100,7 @@
   gap: 10px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(270deg, #34790f, #76fa6d);
+  background: linear-gradient(270deg, #3bd13d, #11db21);
   cursor: pointer;
 }
 
