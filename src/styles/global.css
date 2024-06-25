@@ -137,30 +137,30 @@
 
 @keyframes slide1 {
   25%{
-  background: url(tech1.jpg);
+  background: url(/tech1.jpg);
   }
   50%{
-    background: url(tech2.jpg);
+    background: url(/tech2.jpg);
   }
   75%{
-    background: url(tech3.jpg);
+    background: url(/tech3.jpg);
   }
   100%{
-    background: url(tech4.jpg);
+    background: url(/tech4.jpg);
   }
 }
 
 @keyframes slide {
   25%{
-  background: url(bleu-base.jpeg);
+  background: url(/bleu-base.jpeg);
   }
   50%{
-    background: url(pipeline2.jpg);
+    background: url(/pipeline2.jpg);
   }
   75%{
-    background: url(hevea2.jpg);
+    background: url(/hevea2.jpg);
   }
   100%{
-    background: url(hevea1.jpg);
+    background: url(/hevea1.jpg);
   }
 }
